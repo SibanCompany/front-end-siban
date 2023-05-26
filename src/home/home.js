@@ -1,10 +1,10 @@
-import React, { Fragment } from "react";
-import Activity from "../components/activity";
-import Artist from "../components/artists";
-import Siban from "../components/siban";
-import LocationSiban from "../components/locationSiban";
-import Intro from "../components/introduce";
-import SideButton from "../components/button/sideBtn";
+import React, { Fragment } from 'react';
+import Activity from '../components/activity';
+import Artist from '../components/artists';
+import Siban from '../components/siban';
+import LocationSiban from '../components/locationSiban';
+import Intro from '../components/introduce';
+import SideButton from '../components/button/sideBtn';
 
 function Home() {
   return (

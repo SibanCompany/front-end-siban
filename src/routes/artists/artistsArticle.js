@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import PropTypes from "prop-types";
+import React from 'react';
+import styled from 'styled-components';
+import PropTypes from 'prop-types';
 
 const ArtistProfile = styled.article`
   width: 100%;
@@ -143,22 +143,22 @@ function ArtistArticle({
   );
 }
 ArtistArticle.defaultProps = {
-  imageUrl: "",
-  firstGenre: "",
-  secondGenre: "",
-  thirdGenre: "",
-  fourthGenre: "",
-  name: "배우 이름",
-  age: "생년 월일",
-  body: "키 / 몸무게",
-  email: "이메일 주소",
-  instagram: "인스타그램 아이디",
-  skill: "장점 및 특기",
+  imageUrl: '',
+  firstGenre: '',
+  secondGenre: '',
+  thirdGenre: '',
+  fourthGenre: '',
+  name: '배우 이름',
+  age: '생년 월일',
+  body: '키 / 몸무게',
+  email: '이메일 주소',
+  instagram: '인스타그램 아이디',
+  skill: '장점 및 특기',
   rolePlay: [],
   shortCut: [],
-  secondGenreList: "",
-  thirdGenreList: "",
-  fourthGenreList: "",
+  secondGenreList: '',
+  thirdGenreList: '',
+  fourthGenreList: '',
 };
 ArtistArticle.propTypes = {
   rolePlay: PropTypes.arrayOf(PropTypes.string).isRequired,

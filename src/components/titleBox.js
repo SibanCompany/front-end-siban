@@ -1,5 +1,5 @@
-import React from "react";
-import styled, { css } from "styled-components";
+import React from 'react';
+import styled, { css } from 'styled-components';
 
 function TitleBox({ children, ...rest }) {
   const TitleBox = styled.div`
@@ -20,7 +20,7 @@ function TitleBox({ children, ...rest }) {
     & > p:hover {
       color: #d2d2d2;
     }
-    ${(props) =>
+    ${props =>
       props.loation &&
       css`
         @media only screen and (max-width: 480px) {

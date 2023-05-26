@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import SlideBtn from "./button/slideBtn";
-import InnerBox from "./Inner";
-import TitleBox from "./titleBox";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import SlideBtn from './button/slideBtn';
+import InnerBox from './Inner';
+import TitleBox from './titleBox';
 
 const BoxHome = styled.section`
   padding: 100px 0;
@@ -46,19 +46,19 @@ const MainSlide = styled.ul`
 `;
 
 function SlideBox({ children, Name }) {
-  const slideBtn = (e) => {
+  const slideBtn = e => {
     const id = e.target.id;
-    const artWrapper = document.querySelector(".slide--wrapper--artist");
-    const acWrapper = document.querySelector(".slide--wrapper--activity");
+    const artWrapper = document.querySelector('.slide--wrapper--artist');
+    const acWrapper = document.querySelector('.slide--wrapper--activity');
 
-    if (id === "left-btn") {
-      if (Name === "Artist") {
+    if (id === 'left-btn') {
+      if (Name === 'Artist') {
         artWrapper.style.transform = `translateX(0)`;
       } else {
         acWrapper.style.transform = `translateX(0)`;
       }
-    } else if (id === "right-btn") {
-      if (Name === "Artist") {
+    } else if (id === 'right-btn') {
+      if (Name === 'Artist') {
         artWrapper.style.transform = `translateX(-960px)`;
       } else {
         acWrapper.style.transform = `translateX(-960px)`;
@@ -70,18 +70,20 @@ function SlideBox({ children, Name }) {
     <BoxHome>
       <InnerBox>
         <TitleBox>
-          <h1> [시: 반] {Name === "Artist" ? "아티스트" : "일상"} </h1>
+          <h1> [시: 반] {Name === 'Artist' ? '아티스트' : '일상'} </h1>
           <p>
-            <Link to={Name === "Artist" ? "/artists" : "/activity"}>자세히 보기</Link>
+            <Link to={Name === 'Artist' ? '/artists' : '/activity'}>
+              자세히 보기
+            </Link>
           </p>
         </TitleBox>
         <BoxMain>
           <MainWrapper>
             <MainSlide
               className={
-                Name === "Artist"
-                  ? "slide--wrapper--artist"
-                  : "slide--wrapper--activity"
+                Name === 'Artist'
+                  ? 'slide--wrapper--artist'
+                  : 'slide--wrapper--activity'
               }
             >
               {children}
@@ -91,7 +93,7 @@ function SlideBox({ children, Name }) {
         <SlideBtn
           onClick={slideBtn}
           style={
-            window.innerWidth < 480 ? { display: "none" } : { display: "block" }
+            window.innerWidth < 480 ? { display: 'none' } : { display: 'block' }
           }
         />
       </InnerBox>

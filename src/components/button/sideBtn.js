@@ -1,12 +1,12 @@
-import React, { useState } from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
 import {
   faImagePortrait,
   faComment,
   faIcons,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 const BtnGroup = styled.div`
   position: fixed;
   right: 3%;
@@ -55,7 +55,7 @@ function SideButton() {
 
   const [scrolling, setScrolling] = useState(false);
 
-  const scrollView = (last_scroll_position) => {
+  const scrollView = last_scroll_position => {
     if (last_scroll_position >= 220) {
       setScrolling(true);
     } else {
@@ -63,7 +63,7 @@ function SideButton() {
     }
   };
 
-  window.addEventListener("scroll", (e) => {
+  window.addEventListener('scroll', e => {
     scroll_position = window.scrollY;
 
     if (!working) {
@@ -74,15 +74,15 @@ function SideButton() {
   });
 
   const moveToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
   return (
     <BtnGroup
       id="visible"
       style={
         scrolling
-          ? { display: "flex", transition: "0.4s" }
-          : { display: "none" }
+          ? { display: 'flex', transition: '0.4s' }
+          : { display: 'none' }
       }
     >
       <Link to="/artists">
@@ -104,8 +104,8 @@ function SideButton() {
         onClick={moveToTop}
         style={
           window.innerWidth > 480
-            ? { fontWeight: "bold", fontSize: "1rem" }
-            : { fontWeight: "bold", fontSize: ".8rem" }
+            ? { fontWeight: 'bold', fontSize: '1rem' }
+            : { fontWeight: 'bold', fontSize: '.8rem' }
         }
       >
         Top

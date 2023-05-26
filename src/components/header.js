@@ -1,9 +1,9 @@
-import React from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import InnerBox from "./Inner";
+import React from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import InnerBox from './Inner';
 
-const headerLogo = "../assets/main_logo_white.jpg";
+const headerLogo = '../assets/main_logo_white.jpg';
 
 const HeaderSection = styled.header`
   height: 200px;
@@ -97,44 +97,44 @@ const NavItem = styled.li`
 
 const socialLinkItems = [
   {
-    name: " Youtube",
-    url: "https://www.youtube.com/channel/UCLXAm23QnEYE_WNyjUK3qyQ/featured",
-    img: "youtube",
+    name: ' Youtube',
+    url: 'https://www.youtube.com/channel/UCLXAm23QnEYE_WNyjUK3qyQ/featured',
+    img: 'youtube',
   },
   {
-    name: " Instagram",
-    url: "https://instagram.com/siban.company?utm_medium=copy_link",
-    img: "instagram",
+    name: ' Instagram',
+    url: 'https://instagram.com/siban.company?utm_medium=copy_link',
+    img: 'instagram',
   },
 ];
 
 const navRouterItems = [
   {
-    name: "SIBAN",
-    url: "/siban",
+    name: 'SIBAN',
+    url: '/siban',
   },
   {
-    name: "ACTIVITY",
-    url: "/activity",
+    name: 'ACTIVITY',
+    url: '/activity',
   },
   {
-    name: "ARTISTS",
-    url: "/artists",
+    name: 'ARTISTS',
+    url: '/artists',
   },
   {
-    name: "LOCATION",
-    url: "/location",
+    name: 'LOCATION',
+    url: '/location',
   },
   {
-    name: "BOARD",
-    url: "/board",
+    name: 'BOARD',
+    url: '/board',
   },
 ];
 
 function Header() {
   return (
     <HeaderSection>
-      <InnerBox height={"100%"} header>
+      <InnerBox height={'100%'} header>
         <LogoBox>
           <Link to="/">
             <Logo src={headerLogo} />
