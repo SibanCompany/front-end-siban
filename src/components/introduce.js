@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import InnerBox from "./Inner";
-import TitleBox from "./titleBox";
+import React from 'react';
+import styled from 'styled-components';
+import InnerBox from './Inner';
+import TitleBox from './titleBox';
 
 const IntroBox = styled.section`
   padding: 100px 0 250px 0;
@@ -33,7 +33,7 @@ const VideoRatio = styled.div`
 function Intro() {
   return (
     <IntroBox>
-      <InnerBox height={"400px"}>
+      <InnerBox height={'400px'}>
         <TitleBox introduce>
           <h1> [시: 반] 일상 공유 </h1>
           <p>

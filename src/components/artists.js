@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import SlideBox from "./slideBox";
+import React from 'react';
+import styled from 'styled-components';
+import SlideBox from './slideBox';
 
 const ProfileTiles = styled.li`
   width: 300px;
@@ -39,29 +39,29 @@ const ProfileTiles = styled.li`
 
 const artistProfile = [
   {
-    name: "신락훈",
-    src: "../assets/rakoon_main.jpg",
-    instaAc: "raccoonee_",
+    name: '신락훈',
+    src: '../assets/rakoon_main.jpg',
+    instaAc: 'raccoonee_',
   },
   {
-    name: "김만중",
-    src: "../assets/manjoong_main.jpg",
-    instaAc: "joong_oong",
+    name: '김만중',
+    src: '../assets/manjoong_main.jpg',
+    instaAc: 'joong_oong',
   },
   {
-    name: "홍윤화",
-    src: "../assets/yunhwa_main.jpg",
-    instaAc: "yoonhwa_h",
+    name: '홍윤화',
+    src: '../assets/yunhwa_main.jpg',
+    instaAc: 'yoonhwa_h',
   },
   {
-    name: "정재헌",
-    src: "../assets/jaehun_main.jpg",
-    instaAc: "jung_jh9407",
+    name: '정재헌',
+    src: '../assets/jaehun_main.jpg',
+    instaAc: 'jung_jh9407',
   },
   {
-    name: "최영광",
-    src: "../assets/younggwang_main.jpg",
-    instaAc: "c.glory",
+    name: '최영광',
+    src: '../assets/younggwang_main.jpg',
+    instaAc: 'c.glory',
   },
   // {
   //   name: "윤수영",
