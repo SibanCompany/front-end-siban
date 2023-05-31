@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 function WrapperForRouter({ children, height, mobile_height }) {
   const RouterWrapper = styled.div`
@@ -19,7 +19,7 @@ function WrapperForRouter({ children, height, mobile_height }) {
 }
 
 WrapperForRouter.defaultProps = {
-  height: "600px",
+  height: '600px',
 };
 
 export default WrapperForRouter;

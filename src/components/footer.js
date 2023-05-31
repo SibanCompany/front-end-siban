@@ -1,8 +1,8 @@
-import React from "react";
-import styled from "styled-components";
-import InnerBox from "./Inner";
+import React from 'react';
+import styled from 'styled-components';
+import InnerBox from './Inner';
 
-const footerLogo = "../assets/main_logo_black.jpg";
+const footerLogo = '../assets/main_logo_black.jpg';
 const FooterSection = styled.footer`
   height: 200px;
   background: #000;
@@ -76,31 +76,31 @@ const InfoBox = styled.div`
 
 const LinkList = [
   {
-    name: "Instagram",
-    img: "instagram",
-    url: "https://instagram.com/siban.company?utm_medium=copy_link",
+    name: 'Instagram',
+    img: 'instagram',
+    url: 'https://instagram.com/siban.company?utm_medium=copy_link',
   },
   {
-    name: "Youtube",
-    img: "youtube",
-    url: "https://www.youtube.com/channel/UCLXAm23QnEYE_WNyjUK3qyQ",
+    name: 'Youtube',
+    img: 'youtube',
+    url: 'https://www.youtube.com/channel/UCLXAm23QnEYE_WNyjUK3qyQ',
   },
 ];
 const inforList = {
-  Tel: "010-6354-9756",
-  Email: "cyg110@naver.com",
-  Adr: "수원시 매송고색로 716 4층",
-  Corp_No: "343-31-01201",
+  Tel: '010-6354-9756',
+  Email: 'cyg110@naver.com',
+  Adr: '수원시 매송고색로 716 4층',
+  Corp_No: '343-31-01201',
 };
 let infoKey = [];
 let infoValue = [];
-Object.keys(inforList).forEach((key) => infoKey.push(key));
-Object.keys(inforList).forEach((key) => infoValue.push(inforList[key]));
+Object.keys(inforList).forEach(key => infoKey.push(key));
+Object.keys(inforList).forEach(key => infoValue.push(inforList[key]));
 
 function Footer() {
   return (
     <FooterSection>
-      <InnerBox height={"100%"} footer>
+      <InnerBox height={'100%'} footer>
         <LogoBox>
           <Logo src={footerLogo} />
         </LogoBox>

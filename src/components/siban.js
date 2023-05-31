@@ -1,6 +1,6 @@
-import React from "react";
-import styled from "styled-components";
-import InnerBox from "./Inner";
+import React from 'react';
+import styled from 'styled-components';
+import InnerBox from './Inner';
 
 const HomeSiban = styled.section`
   background: #000000;
@@ -28,7 +28,7 @@ const Cover = styled.div`
   }
   & > div > p {
     font-size: 1rem;
-    margin 10px 0;
+    margin: 10px 0;
   }
   & > div > h2 {
     font-size: 4rem;
@@ -40,8 +40,8 @@ const Cover = styled.div`
       margin: 70px auto;
     }
     & > div > p {
-      font-size: .5rem;
-      margin 10px 0;
+      font-size: 0.5rem;
+      margin: 10px 0;
     }
     & > div > h2 {
       font-size: 2rem;
@@ -52,7 +52,7 @@ const Cover = styled.div`
 function Siban() {
   return (
     <HomeSiban>
-      <InnerBox height={"650px"} siban>
+      <InnerBox height={'650px'} siban>
         <Cover>
           <div>
             <p> 예 술 창 작 집 단</p>

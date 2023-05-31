@@ -1,16 +1,16 @@
-import React, { useEffect } from "react";
-import styled from "styled-components";
-import { Link } from "react-router-dom";
-import InnerBox from "./Inner";
-import TitleBox from "./titleBox";
+import React, { useEffect } from 'react';
+import styled from 'styled-components';
+import { Link } from 'react-router-dom';
+import InnerBox from './Inner';
+import TitleBox from './titleBox';
 
 import {
   faBuildingUser,
   faSquareParking,
   faPeopleGroup,
   faCalendar,
-} from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+} from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
 function LocationSiban({ ...rest }) {
   const { kakao } = window;
@@ -177,7 +177,7 @@ function LocationSiban({ ...rest }) {
     }
   `;
   const kakaoMap = () => {
-    const sibanLocation = document.querySelector("#map");
+    const sibanLocation = document.querySelector('#map');
     const options = {
       center: new kakao.maps.LatLng(37.251075, 126.982791),
       level: 3,
@@ -199,18 +199,18 @@ function LocationSiban({ ...rest }) {
   return (
     <HomeLocation
       style={
-        window.innerWidth < 480 && window.location.pathname === "/location"
-          ? { padding: "0 0 50px 0" }
-          : { padding: "100px 0" }
+        window.innerWidth < 480 && window.location.pathname === '/location'
+          ? { padding: '0 0 50px 0' }
+          : { padding: '100px 0' }
       }
     >
-      <InnerBox height={"auto"}>
+      <InnerBox height={'auto'}>
         <TitleBox
           style={
-            window.innerWidth < 480 && window.location.pathname === "/location"
+            window.innerWidth < 480 && window.location.pathname === '/location'
               ? {
-                  borderBottom: "none",
-                  width: "90%",
+                  borderBottom: 'none',
+                  width: '90%',
                 }
               : {}
           }
@@ -218,16 +218,16 @@ function LocationSiban({ ...rest }) {
           <h1
             style={
               window.innerWidth < 480 &&
-              window.location.pathname === "/location"
+              window.location.pathname === '/location'
                 ? {
-                    maxWidth: "none",
-                    width: "100%",
-                    fontWeight: "bold",
-                    fontSize: "1rem",
-                    textAlign: "start",
-                    padding: "30px 0 5px 0",
-                    height: "auto",
-                    borderBottom: "1px solid #e5e5e5",
+                    maxWidth: 'none',
+                    width: '100%',
+                    fontWeight: 'bold',
+                    fontSize: '1rem',
+                    textAlign: 'start',
+                    padding: '30px 0 5px 0',
+                    height: 'auto',
+                    borderBottom: '1px solid #e5e5e5',
                   }
                 : {}
             }
@@ -239,9 +239,9 @@ function LocationSiban({ ...rest }) {
             <Link
               to="/location"
               style={
-                window.location.pathname === "/location"
-                  ? { display: "none" }
-                  : { display: "block" }
+                window.location.pathname === '/location'
+                  ? { display: 'none' }
+                  : { display: 'block' }
               }
             >
               자세히 보기
@@ -301,7 +301,7 @@ function LocationSiban({ ...rest }) {
                     <FontAwesomeIcon
                       icon={faBuildingUser}
                       size="2x"
-                      style={{ color: "a2a2a2" }}
+                      style={{ color: 'a2a2a2' }}
                     />
                     <p>연습실 대관</p>
                   </li>
@@ -309,7 +309,7 @@ function LocationSiban({ ...rest }) {
                     <FontAwesomeIcon
                       icon={faPeopleGroup}
                       size="2x"
-                      style={{ color: "a2a2a2" }}
+                      style={{ color: 'a2a2a2' }}
                     />
                     <p>레슨 상담</p>
                   </li>
@@ -317,7 +317,7 @@ function LocationSiban({ ...rest }) {
                     <FontAwesomeIcon
                       icon={faSquareParking}
                       size="2x"
-                      style={{ color: "a2a2a2" }}
+                      style={{ color: 'a2a2a2' }}
                     />
                     <p>주차장</p>
                   </li>
@@ -325,7 +325,7 @@ function LocationSiban({ ...rest }) {
                     <FontAwesomeIcon
                       icon={faCalendar}
                       size="2x"
-                      style={{ color: "a2a2a2" }}
+                      style={{ color: 'a2a2a2' }}
                     />
                     <p>예정 공연</p>
                   </li>

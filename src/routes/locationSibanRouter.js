@@ -1,8 +1,8 @@
-import React from "react";
-import LocationSiban from "../components/locationSiban";
-import styled from "styled-components";
-const serviceImg = "../assets/corp_document_service.jpg";
-const mailOrderImg = "../assets/corp_document_MOB.jpg";
+import React from 'react';
+import LocationSiban from '../components/locationSiban';
+import styled from 'styled-components';
+const serviceImg = '../assets/corp_document_service.jpg';
+const mailOrderImg = '../assets/corp_document_MOB.jpg';
 
 const CorpsWrapper = styled.div`
   max-width: 1200px;
@@ -62,16 +62,16 @@ const ShowImg = styled.div`
 
 function LocationSibanRouter() {
   const ImgStyle = {
-    width: "860px",
-    padding: "50px",
-    margin: "0 auto",
-    cursor: "pointer",
+    width: '860px',
+    padding: '50px',
+    margin: '0 auto',
+    cursor: 'pointer',
   };
 
   const SmallImgStyle = {
-    width: "90%",
-    margin: "0 auto 50px auto",
-    cursor: "pointer",
+    width: '90%',
+    margin: '0 auto 50px auto',
+    cursor: 'pointer',
   };
 
   function createImg(src) {
@@ -80,9 +80,9 @@ function LocationSibanRouter() {
 
   function showDocu(e) {
     const id = e.target.id;
-    const imgBox = document.querySelector("#image-box");
+    const imgBox = document.querySelector('#image-box');
 
-    if (id === "service") {
+    if (id === 'service') {
       imgBox.innerHTML = createImg(serviceImg);
     } else {
       imgBox.innerHTML = createImg(mailOrderImg);
@@ -104,8 +104,8 @@ function LocationSibanRouter() {
           </ShowImg>
         </CorpsInfo>
         <div
-          onClick={(e) => {
-            e.target.style.display = "none";
+          onClick={e => {
+            e.target.style.display = 'none';
           }}
           id="image-box"
           style={window.innerWidth < 480 ? SmallImgStyle : ImgStyle}

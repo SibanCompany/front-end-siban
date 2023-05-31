@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const ButtonGroup = styled.div`
   max-width: 1200px;
@@ -22,7 +22,7 @@ const MoveBtn = styled.button`
   &:last-child {
     right: 0;
   }
-  // color: ${(props) => props.color || "black"};
+  // color: ${props => props.color || 'black'};
 `;
 
 function SlideBtn({ children, ...rest }) {

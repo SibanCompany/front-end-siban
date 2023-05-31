@@ -1,5 +1,5 @@
-import React from "react";
-import styled, { css } from "styled-components";
+import React from 'react';
+import styled, { css } from 'styled-components';
 
 function InnerBox({ children, height, ...rest }) {
   const Inner = styled.div`
@@ -7,22 +7,22 @@ function InnerBox({ children, height, ...rest }) {
     margin: 0 auto;
     height: ${height};
     position: relative;
-    ${(props) =>
+    ${props =>
       props.footer &&
       css`
         display: flex;
         align-items: center;
       `}
-    ${(props) =>
+    ${props =>
       props.header &&
       css`
         display: flex;
       `}
-    ${(props) =>
+    ${props =>
       props.siban &&
       css`
         display: flex;
-        background: url("../assets/main_photo.png") no-repeat;
+        background: url('../assets/main_photo.png') no-repeat;
         background-size: cover;
         position: relative;
         @media only screen and (max-width: 480px) {
@@ -35,6 +35,6 @@ function InnerBox({ children, height, ...rest }) {
   return <Inner {...rest}> {children} </Inner>;
 }
 InnerBox.defaultProps = {
-  height: "500px",
+  height: '500px',
 };
 export default InnerBox;
