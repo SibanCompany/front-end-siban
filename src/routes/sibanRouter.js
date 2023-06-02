@@ -1,6 +1,42 @@
 import React from 'react';
 import styled from 'styled-components';
 
+function SibanRouter() {
+  return (
+    <div>
+      <MainSiban>
+        <ImageBox>
+          <img src="../assets/about-siban.jpeg" alt="" />
+        </ImageBox>
+        {/* {sibanIntroList.map((list, index) => (
+          <SlogunBox
+            key={index}
+            style={
+              index % 2 === 0
+                ? { textAlign: "start" }
+                : { textAlign: "end", flexDirection: "row-reverse" }
+            }
+          >
+            <ImgBox>
+              <img src={list.src} alt={list.id} />
+            </ImgBox>
+            <TextBox
+              style={
+                index % 2 === 0
+                  ? { paddingLeft: "20px" }
+                  : { paddingRight: "20px" }
+              }
+            >
+              <h2> {list.title} </h2>
+              <p>{list.desc}</p>
+            </TextBox>
+          </SlogunBox>
+        ))} */}
+      </MainSiban>
+    </div>
+  );
+}
+
 const MainSiban = styled.div`
   padding: 100px 0;
   background: linear-gradient(
@@ -107,41 +143,5 @@ const sibanIntroList = [
     desc: `좋은 사람들과\n선한 영향력을 나눌 수 있는\n좋은 작품으로 다가가겠습니다.`,
   },
 ];
-
-function SibanRouter() {
-  return (
-    <div>
-      <MainSiban>
-        <ImageBox>
-          <img src="../assets/about-siban.jpeg" alt="" />
-        </ImageBox>
-        {/* {sibanIntroList.map((list, index) => (
-          <SlogunBox
-            key={index}
-            style={
-              index % 2 === 0
-                ? { textAlign: "start" }
-                : { textAlign: "end", flexDirection: "row-reverse" }
-            }
-          >
-            <ImgBox>
-              <img src={list.src} alt={list.id} />
-            </ImgBox>
-            <TextBox
-              style={
-                index % 2 === 0
-                  ? { paddingLeft: "20px" }
-                  : { paddingRight: "20px" }
-              }
-            >
-              <h2> {list.title} </h2>
-              <p>{list.desc}</p>
-            </TextBox>
-          </SlogunBox>
-        ))} */}
-      </MainSiban>
-    </div>
-  );
-}
 
 export default SibanRouter;

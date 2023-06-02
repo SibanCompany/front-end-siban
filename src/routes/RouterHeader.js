@@ -1,6 +1,10 @@
 import React from 'react';
 import styled from 'styled-components';
 
+function HeaderForRouter({ page }) {
+  return <RouterHeader>{page}</RouterHeader>;
+}
+
 const RouterHeader = styled.header`
   margin: 0 auto 20px auto;
   padding: 100px 0 0 0;
@@ -19,9 +23,5 @@ const RouterHeader = styled.header`
     font-size: 1rem;
   }
 `;
-
-function HeaderForRouter({ page }) {
-  return <RouterHeader>{page}</RouterHeader>;
-}
 
 export default HeaderForRouter;

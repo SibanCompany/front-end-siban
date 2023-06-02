@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import ArtistArticle from './artistsArticle';
 import SideNavForRouter from '../RouterSideNav';
+import { Link } from 'react-router-dom';
 
 const ProfileWrapper = styled.section`
   width: 1200px;
@@ -170,11 +171,13 @@ function ArtistMainSection() {
       <SideNavForRouter>
         <ul>
           {nameList.map((item, index) => (
-            <li key={index}>
-              <span id={item} onClick={changeArticle}>
-                {item}
-              </span>
-            </li>
+            <Link to="" key={index}>
+              <li>
+                <span id={item} onClick={changeArticle}>
+                  {item}
+                </span>
+              </li>
+            </Link>
           ))}
         </ul>
       </SideNavForRouter>

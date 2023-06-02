@@ -6,7 +6,7 @@ import SibanRouter from './routes/sibanRouter';
 import ActivityRouter from './routes/activityRouter';
 import ArtistRouter from './routes/artistRouter';
 import LocationSibanRouter from './routes/locationSibanRouter';
-import BoardRouter from './routes/boardRouter';
+import Board from './pages/Board/Board';
 
 const Router = () => {
   return (
@@ -18,7 +18,9 @@ const Router = () => {
         <Route path="/activity" element={<ActivityRouter />} />
         <Route path="/artists" element={<ArtistRouter />} />
         <Route path="/location" element={<LocationSibanRouter />} />
-        <Route path="/board" element={<BoardRouter />} />
+        <Route path="/board" element={<Board />}>
+          <Route path=":id" element={<Board />} />
+        </Route>
       </Routes>
       <Footer />
     </BrowserRouter>
