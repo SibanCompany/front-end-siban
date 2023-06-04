@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "첫번째 레슨문의 입니다",
+      "createdAt": "2023-06-01",
+      "updatedAt": "2023-06-01",
+      "boardType": "INQUIRY_LESSON",
+      "user": {
+        "id": 1,
+        "name": "Joshua Byrd",
+        "email": "to@huf.lk"
+      }
+    },
+    {
+      "id": 2,
+      "title": "두번째 레슨문의 입니다",
+      "createdAt": "2023-06-01",
+      "updatedAt": "2023-06-01",
+      "boardType": "INQUIRY_LESSON",
+      "user": {
+        "id": 1,
+        "name": "George Doyle",
+        "email": "si@gepmedba.ht"
+      }
+    },
+    {
+      "id": 3,
+      "title": "세번째 레슨문의 입니다",
+      "createdAt": "2023-06-01",
+      "updatedAt": "2023-06-01",
+      "boardType": "INQUIRY_LESSON",
+      "user": {
+        "id": 1,
+        "name": "Aaron Duncan",
+        "email": "sefarep@mojihuk.lr"
+      }
+    }
+  ]
+}

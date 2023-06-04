@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "qssQga",
+      "createAt": "1/10/2056",
+      "updatedAt": "9/3/2027",
+      "boardType": "COMMUNITY",
+      "user": {
+        "id": 1,
+        "name": "Ophelia Hansen",
+        "email": "seefnep@parewug.se"
+      }
+    },
+    {
+      "id": 2,
+      "title": "BkjypuVcdBzBykvxgwGJqssQga",
+      "createAt": "2/5/2092",
+      "updatedAt": "12/12/2044",
+      "boardType": "COMMUNITY",
+      "user": {
+        "id": 1,
+        "name": "Manuel Phelps",
+        "email": "omcubow@lavi.hk"
+      }
+    },
+    {
+      "id": 3,
+      "title": "qLYbVtfsNqUXKCRBbXwWqssQga",
+      "createAt": "2/16/2110",
+      "updatedAt": "3/10/2023",
+      "boardType": "COMMUNITY",
+      "user": {
+        "id": 1,
+        "name": "Aaron Brock",
+        "email": "zagmiec@hukfudtet.im"
+      }
+    }
+  ]
+}

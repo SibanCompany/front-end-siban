@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import ActivityMainSection from './activity/activityMainSection';
 import ActivityVideoSection from './activity/activityVideoSection';
 import ActivityLessonSection from './activity/activityLessonSection';
@@ -36,9 +37,11 @@ function ActivityRouter() {
         <SideNavForRouter>
           <ul>
             {ActivityNavList.map((item, index) => (
-              <li key={index} id={index} onClick={changeRender}>
-                {item}
-              </li>
+              <Link to="" key={index}>
+                <li id={index} onClick={changeRender}>
+                  {item}
+                </li>
+              </Link>
             ))}
           </ul>
         </SideNavForRouter>

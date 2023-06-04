@@ -1,6 +1,21 @@
 import React from 'react';
 import styled from 'styled-components';
 
+function ActivityDailySection() {
+  return (
+    <MainSection>
+      <TextWrapper>
+        다양한 일상 모습으로 찾아뵙겠습니다.
+        <p>
+          <a href="https://www.instagram.com/siban.company/?utm_medium=copy_link">
+            인스타그램으로 보기
+          </a>
+        </p>
+      </TextWrapper>
+    </MainSection>
+  );
+}
+
 const MainSection = styled.section`
   width: 1200px;
   @media only screen and (max-width: 480px) {
@@ -26,21 +41,5 @@ const TextWrapper = styled.div`
     height: 100%;
   }
 `;
-function ActivityDailySection() {
-  return (
-    <>
-      <MainSection>
-        <TextWrapper>
-          다양한 일상 모습으로 찾아뵙겠습니다.
-          <p>
-            <a href="https://www.instagram.com/siban.company/?utm_medium=copy_link">
-              인스타그램으로 보기
-            </a>
-          </p>
-        </TextWrapper>
-      </MainSection>
-    </>
-  );
-}
 
 export default ActivityDailySection;
