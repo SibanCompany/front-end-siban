@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import SlideBtn from './button/slideBtn';
 import InnerBox from './Inner';
 import TitleBox from './titleBox';
+import { artistProfile } from './artists';
 
 const BoxHome = styled.section`
   padding: 100px 0;
@@ -33,7 +34,7 @@ const MainWrapper = styled.div`
   }
 `;
 const MainSlide = styled.ul`
-  width: 1980px;
+  width: 2880px;
   position: abosolute;
   top: 0;
   left: 320px;
@@ -41,25 +42,39 @@ const MainSlide = styled.ul`
   align-items: center;
   transition: 0.7s ease;
   @media only screen and (max-width: 480px) {
-    width: 825px;
+    width: 1720px;
   }
 `;
 
 function SlideBox({ children, Name }) {
-  const slideBtn = e => {
-    const id = e.target.id;
+  let currentIdx = 0;
+
+  const moveSlide = num => {
     const artWrapper = document.querySelector('.slide--wrapper--artist');
+    const translateXValue = -num * 960 + 'px';
+
+    artWrapper.style.transform = `translateX(${translateXValue})`;
+    currentIdx = num;
+  };
+
+  const slideBtn = e => {
     const acWrapper = document.querySelector('.slide--wrapper--activity');
+    const id = e.target.id;
+    const artistCount = Math.ceil(artistProfile.length / 3);
 
     if (id === 'left-btn') {
       if (Name === 'Artist') {
-        artWrapper.style.transform = `translateX(0)`;
+        if (currentIdx <= artistCount - 1 && currentIdx > 0) {
+          moveSlide(currentIdx - 1);
+        }
       } else {
         acWrapper.style.transform = `translateX(0)`;
       }
     } else if (id === 'right-btn') {
       if (Name === 'Artist') {
-        artWrapper.style.transform = `translateX(-960px)`;
+        if (currentIdx < artistCount - 1) {
+          moveSlide(currentIdx + 1);
+        }
       } else {
         acWrapper.style.transform = `translateX(-960px)`;
       }
