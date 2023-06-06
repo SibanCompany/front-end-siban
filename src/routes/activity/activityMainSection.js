@@ -31,7 +31,7 @@ function ActivityMainSection() {
     >
       <BasicInfo>
         <PosterBox>
-          <img src="../assets/dday-poster-1.jpeg" alt="main-poster" />
+          <img src="../assets/d-day-2023-07.jpg" alt="main-poster" />
         </PosterBox>
         <DescriptionBox>
           <LeftList>
@@ -45,23 +45,23 @@ function ActivityMainSection() {
           <RightList>
             <li>
               D : DAY (디 : 데이){' '}
-              <span style={{ color: '#d2d2d2' }}> [공연 종료] </span>
+              <span style={{ color: 'red' }}> [공연 예정] </span>
             </li>
-            <li> 드라마극 (75분) </li>
-            <li> 2022.12.27.(화) ~ 2023.01.01.(일) </li>
+            <li> 드라마극 (80분) </li>
+            <li> 2023.07.01(토) ~ 2023.07.02(일) </li>
             <ul
               className="right-list--time"
               style={{ height: '50px', marginBottom: '20px' }}
             >
-              <li style={{ marginBottom: '10px' }}> 화 ~ 금 19시 30분</li>
-              <li> 토, 일 15시 </li>
+              <li style={{ marginBottom: '10px' }}> 오후 4시 30분</li>
+              <li> 오후 7시 </li>
             </ul>
             <ul
               className="right-list--place"
               style={{ height: '50px', marginBottom: '20px' }}
             >
-              <li style={{ marginBottom: '10px' }}>스튜디오SK</li>
-              <li>서울특별시 종로구 명륜3가 122-2</li>
+              <li style={{ marginBottom: '10px' }}>메카네 소극장</li>
+              <li>경기도 수원시 팔달구 창룡대로 20</li>
             </ul>
             <li>
               <p style={{ lineHeight: '1.7rem' }}>
@@ -72,15 +72,11 @@ function ActivityMainSection() {
             </li>
             <li>
               <ButtonBox>
-                <a
-                  href="https://booking.naver.com/booking/5/bizes/817380"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href="#" target="_blank" rel="noreferrer">
                   네이버 예약
                 </a>
                 <a
-                  href="https://map.naver.com/v5/entry/place/37232850?c=14136789.7661805,4520812.9856529,15,0,0,0,dh"
+                  href="https://map.naver.com/v5/search/%EB%A9%94%EC%B9%B4%EB%84%A4%EC%86%8C%EA%B7%B9%EC%9E%A5/place/97521034?c=15,0,0,0,dh&isCorrectAnswer=true"
                   target="_blank"
                   rel="noreferrer"
                 >
@@ -92,7 +88,7 @@ function ActivityMainSection() {
         </DescriptionBox>
       </BasicInfo>
       <PosterSub>
-        <img src="../assets/dday-whole.jpeg" alt="sub-poster" />
+        <img src="../assets/d-day-poster-2023-07.jpeg" alt="sub-poster" />
       </PosterSub>
       <MoreInfoBtnBox gradient={gradient}>
         <span onClick={showPoster}> {text} </span>

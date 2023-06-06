@@ -50,8 +50,14 @@ const ActivityTiles = styled.li`
 
 const activityItems = [
   {
+    title: 'D : DAY (메카네 소극장)',
+    brief: '2023년 7월 1일 ~ 7월 2일',
+    src: '../assets/d-day-2023-07.jpg',
+    schedule: true,
+  },
+  {
     title: 'D : DAY (스튜디오SK)',
-    brief: '2022년 12월 27일 ~ 23년 1월 1일',
+    brief: '2022년 12월 27일 ~ 1월 1일',
     src: '../assets/dday-poster-1.jpeg',
     schedule: false,
   },
