@@ -2,9 +2,9 @@
   "data": [
     {
       "id": 1,
-      "title": "qssQga",
-      "createAt": "1/10/2056",
-      "updatedAt": "9/3/2027",
+      "title": "첫번째 자유게시판 글 입니다",
+      "createdAt": "2023-06-01",
+      "updatedAt": "2023-06-01",
       "boardType": "COMMUNITY",
       "user": {
         "id": 1,
@@ -14,9 +14,9 @@
     },
     {
       "id": 2,
-      "title": "BkjypuVcdBzBykvxgwGJqssQga",
-      "createAt": "2/5/2092",
-      "updatedAt": "12/12/2044",
+      "title": "두번째 자유게시판 글 입니다",
+      "createdAt": "2023-06-01",
+      "updatedAt": "2023-06-01",
       "boardType": "COMMUNITY",
       "user": {
         "id": 1,
@@ -26,9 +26,9 @@
     },
     {
       "id": 3,
-      "title": "qLYbVtfsNqUXKCRBbXwWqssQga",
-      "createAt": "2/16/2110",
-      "updatedAt": "3/10/2023",
+      "title": "세번째 자유게시판 글 입니다",
+      "createdAt": "2023-06-01",
+      "updatedAt": "2023-06-01",
       "boardType": "COMMUNITY",
       "user": {
         "id": 1,
