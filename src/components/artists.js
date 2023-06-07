@@ -72,7 +72,7 @@ export const artistProfile = [
   },
   {
     name: '최영광',
-    src: '../assets/younggwang_main.jpg',
+    src: '../assets/younggwang_main.jpeg',
     instaAc: 'c.glory_',
   },
   {
