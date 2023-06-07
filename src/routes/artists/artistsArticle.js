@@ -24,6 +24,7 @@ const ImageBox = styled.div`
   justify-content: center;
   align-items: center;
   & > img {
+    object-fit: contain;
   }
   @media only screen and (max-width: 480px) {
     width: 100%;
@@ -72,6 +73,7 @@ function ArtistArticle({
   secondGenre,
   thirdGenre,
   fourthGenre,
+  awards,
   name,
   age,
   body,
@@ -83,6 +85,7 @@ function ArtistArticle({
   secondGenreList,
   thirdGenreList,
   fourthGenreList,
+  awardsList,
 }) {
   return (
     <ArtistProfile>
@@ -100,10 +103,13 @@ function ArtistArticle({
             <li> 특기 </li>
             <li> [대표작품] </li>
             <li style={{ height }}> 연극 </li>
-            <li> {firstGenre} </li>
+            <li style={{ height: `${shortCut.length * 30}px` }}>
+              {firstGenre}
+            </li>
             <li> {secondGenre} </li>
             <li> {thirdGenre} </li>
             <li> {fourthGenre} </li>
+            <li> {awards} </li>
           </ul>
         </LeftSide>
         <RightSide>
@@ -128,7 +134,7 @@ function ArtistArticle({
                 <li key={index}> {item} </li>
               ))}
             </ul>
-            <ul>
+            <ul style={{ height: `${shortCut.length * 30}px` }}>
               {shortCut.map((item, index) => (
                 <li key={index}> {item} </li>
               ))}
@@ -136,6 +142,11 @@ function ArtistArticle({
             <li> {secondGenreList} </li>
             <li> {thirdGenreList} </li>
             <li> {fourthGenreList} </li>
+            <ul>
+              {awardsList.map((item, index) => (
+                <li key={index}> {item} </li>
+              ))}
+            </ul>
           </ul>
         </RightSide>
       </DescBox>
@@ -148,6 +159,7 @@ ArtistArticle.defaultProps = {
   secondGenre: '',
   thirdGenre: '',
   fourthGenre: '',
+  awards: '',
   name: '배우 이름',
   age: '생년 월일',
   body: '키 / 몸무게',
@@ -159,6 +171,7 @@ ArtistArticle.defaultProps = {
   secondGenreList: '',
   thirdGenreList: '',
   fourthGenreList: '',
+  awardsList: [],
 };
 ArtistArticle.propTypes = {
   rolePlay: PropTypes.arrayOf(PropTypes.string).isRequired,
