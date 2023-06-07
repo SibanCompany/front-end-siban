@@ -5,9 +5,10 @@ export const NavContainer = styled.header`
   justify-content: space-between;
   align-items: center;
   height: 200px;
-  margin: 0 120px;
+  padding: 0 120px;
+  border-bottom: 0.5px solid ${({ theme }) => theme.color.balck};
   @media only screen and (max-width: 480px) {
-    margin: 0 10px;
+    padding: 0 10px;
     display: flex;
     align-items: center;
     justify-items: center;
@@ -70,6 +71,7 @@ export const SocialMedia = styled.li`
     color: ${({ theme }) => theme.color.grey_3};
   }
   @media only screen and (max-width: 480px) {
+    font-size: 12px;
     &:first-child {
       margin-right: 0 20px 0 0;
     }

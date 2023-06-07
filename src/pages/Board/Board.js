@@ -32,7 +32,7 @@ function Board() {
         </SideNavForRouter>
         <S.Community>
           <S.NoticeContainer>
-            {currentLink === 'space-rental' ? null : (
+            {currentLink === 'space_rental_inquiry' ? null : (
               <S.NoticeHeader className="notice__title">
                 <S.NoticeIndex flex="1"> 번호 </S.NoticeIndex>
                 <S.NoticeIndex flex="2"> 날짜 </S.NoticeIndex>
@@ -41,7 +41,7 @@ function Board() {
               </S.NoticeHeader>
             )}
 
-            {currentLink === 'space-rental' ? (
+            {currentLink === 'space_rental_inquiry' ? (
               <SpaceRental />
             ) : (
               <CommunityBoard menuLink={currentLink || 'notice'} />
@@ -57,9 +57,9 @@ export default Board;
 
 const BOARD_MENU = [
   { id: 1, title: '공지사항', link: '?boardType=notice' },
-  { id: 2, title: '배우에게', link: '?boardType=forActor' },
-  { id: 3, title: '레슨문의', link: '?boardType=inquiry-lesson' },
-  { id: 4, title: '대관문의', link: '?boardType=space-rental' },
+  { id: 2, title: '자유게시판', link: '?boardType=community' },
+  { id: 3, title: '레슨문의', link: '?boardType=lesson_inquiry' },
+  { id: 4, title: '대관문의', link: '?boardType=space_rental_inquiry' },
 ];
 
 /* <ul className="notice__list">
