@@ -24,7 +24,7 @@ export const flex = {
   display:flex;
   flex-direction:${direction};
   justify-content:${justify};
-  align-itemts:${align}
+  align-items:${align}
   `,
 };
 

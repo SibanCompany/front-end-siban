@@ -9,6 +9,8 @@ const ProfileTiles = styled.li`
   img {
     width: 100%;
     height: 100%;
+    margin: 0 auto;
+    object-fit: contain;
   }
   & > div > img {
     background-size: cover;
@@ -37,7 +39,7 @@ const ProfileTiles = styled.li`
   }
 `;
 
-const artistProfile = [
+export const artistProfile = [
   {
     name: '신락훈',
     src: '../assets/rakoon_main.jpg',
@@ -47,6 +49,16 @@ const artistProfile = [
     name: '김만중',
     src: '../assets/manjoong_main.jpg',
     instaAc: 'joong_oong',
+  },
+  {
+    name: '윤수영',
+    src: '../assets/suyoung_main.jpg',
+    instaAc: 'swimee',
+  },
+  {
+    name: '권기은',
+    src: '../assets/kieun_main.jpeg',
+    instaAc: 'rlo_il.98',
   },
   {
     name: '홍윤화',
@@ -60,17 +72,17 @@ const artistProfile = [
   },
   {
     name: '최영광',
-    src: '../assets/younggwang_main.jpg',
-    instaAc: 'c.glory',
+    src: '../assets/younggwang_main.jpeg',
+    instaAc: 'c.glory_',
   },
-  // {
-  //   name: "윤수영",
-  //   src: "../assets/suyoung_main.jpg",
-  //   instaAc: "swimee",
-  // },
+  {
+    name: '앙혜지',
+    src: '../assets/hyeji_main.jpeg',
+    instaAc: '__hye_z_',
+  },
 ];
 
-function Artist() {
+export default function Artist() {
   return (
     <SlideBox Name="Artist">
       {artistProfile.map((item, index) => (
@@ -78,9 +90,7 @@ function Artist() {
           <div>
             <img src={item.src} alt={item.name} />
             <p> {item.name} </p>
-            <a
-              href={`{https://instagram.com/${item.instaAc}_?utm_medium=copy_link}`}
-            >
+            <a href={`https://instagram.com/${item.instaAc}`} target="_blank">
               @{item.instaAc}
             </a>
           </div>
@@ -89,5 +99,3 @@ function Artist() {
     </SlideBox>
   );
 }
-
-export default Artist;

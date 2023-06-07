@@ -1,0 +1,40 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "title": "첫번째 자유게시판 글 입니다",
+      "createdAt": "2023-06-01",
+      "updatedAt": "2023-06-01",
+      "boardType": "COMMUNITY",
+      "user": {
+        "id": 1,
+        "name": "Ophelia Hansen",
+        "email": "seefnep@parewug.se"
+      }
+    },
+    {
+      "id": 2,
+      "title": "두번째 자유게시판 글 입니다",
+      "createdAt": "2023-06-01",
+      "updatedAt": "2023-06-01",
+      "boardType": "COMMUNITY",
+      "user": {
+        "id": 1,
+        "name": "Manuel Phelps",
+        "email": "omcubow@lavi.hk"
+      }
+    },
+    {
+      "id": 3,
+      "title": "세번째 자유게시판 글 입니다",
+      "createdAt": "2023-06-01",
+      "updatedAt": "2023-06-01",
+      "boardType": "COMMUNITY",
+      "user": {
+        "id": 1,
+        "name": "Aaron Brock",
+        "email": "zagmiec@hukfudtet.im"
+      }
+    }
+  ]
+}
