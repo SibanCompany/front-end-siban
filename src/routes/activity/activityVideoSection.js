@@ -24,40 +24,32 @@ function ActivityVideoSection() {
 
 const youtubeList = [
   {
+    title: '[막내 다이어리 : 오늘은 사진찍는 날]',
+    src: 'https://www.youtube.com/embed/Vo0Yj7YAtlc',
+  },
+  {
+    title: '[막내 다이어리 : 막내 1의 하루]',
+    src: 'https://www.youtube.com/embed/BjgSsvn6m8g',
+  },
+  {
+    title: '[막내 다이어리 : 노는게 제일 좋아!]',
+    src: 'https://www.youtube.com/embed/qfguZxCjYmc',
+  },
+  {
+    title: '[막내 다이어리 : 연출의 눈물, 첫 리딩 Day]',
+    src: 'https://www.youtube.com/embed/kS3zcArCeeY',
+  },
+  {
+    title: '[막내 다이어리 : 연출과 조연출, 이대로 괜찮은가?]',
+    src: 'https://www.youtube.com/embed/QdBwiBdbkCE',
+  },
+  {
+    title: '[막내 다이어리 : 철부지 오빠들과 말괄량이 막내들]',
+    src: 'https://www.youtube.com/embed/SfafGYe7eec',
+  },
+  {
     title: 'M/V',
     src: 'https://www.youtube.com/embed/qrNDKumU_tI',
-  },
-  {
-    title: 'contest_exhibit_1',
-    src: 'https://www.youtube.com/embed/3JbMuLViC6g',
-  },
-  {
-    title: 'contest_exhibit_2',
-    src: 'https://www.youtube.com/embed/UUsTatIVcnY',
-  },
-  {
-    title: 'contest_exhibit_3',
-    src: 'https://www.youtube.com/embed/L78uwhMhgXg',
-  },
-  {
-    title: 'contest_exhibit_4',
-    src: 'https://www.youtube.com/embed/v8zanX6DLZU',
-  },
-  {
-    title: 'contest_exhibit_5',
-    src: 'https://www.youtube.com/embed/ESmefPaQesQ',
-  },
-  {
-    title: 'contest_exhibit_6',
-    src: 'https://www.youtube.com/embed/C2AB0qtZJ1I',
-  },
-  {
-    title: 'contest_exhibit_7',
-    src: 'https://www.youtube.com/embed/M9JWm1pf43A',
-  },
-  {
-    title: 'contest_exhibit_8',
-    src: 'https://www.youtube.com/embed/lINNxua1RPE',
   },
 ];
 

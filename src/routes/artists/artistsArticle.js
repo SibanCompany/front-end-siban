@@ -120,7 +120,7 @@ function ArtistArticle({
             <li> {email} </li>
             <li>
               <a
-                href={`https://instagram.com/${instagram}_?utm_medium=copy_link`}
+                href={`https://instagram.com/${instagram}`}
                 target="_blank"
                 rel="noreferrer"
               >
