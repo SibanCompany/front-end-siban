@@ -157,7 +157,7 @@ const artistInfo = [
     age: '1998. 04. 10',
     body: '163cm / 47kg',
     email: 'yhji9804@naver.com',
-    instagram: '__hye_z__',
+    instagram: '__hye_z_',
     skill: '-',
     represent: '-',
     rolePlay: ['디:데이', '적정온도', '무엇이 될꼬하니'],

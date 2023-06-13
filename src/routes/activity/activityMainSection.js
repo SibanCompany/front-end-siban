@@ -72,7 +72,11 @@ function ActivityMainSection() {
             </li>
             <li>
               <ButtonBox>
-                <a href="#" target="_blank" rel="noreferrer">
+                <a
+                  href="https://booking.naver.com/booking/12/bizes/926771/items/5133894"
+                  target="_blank"
+                  rel="noreferrer"
+                >
                   네이버 예약
                 </a>
                 <a
