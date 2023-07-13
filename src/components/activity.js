@@ -53,7 +53,7 @@ const activityItems = [
     title: 'D : DAY (메카네 소극장)',
     brief: '2023년 7월 1일 ~ 7월 2일',
     src: '../assets/d-day-2023-07.jpg',
-    schedule: true,
+    schedule: false,
   },
   {
     title: 'D : DAY (스튜디오SK)',
