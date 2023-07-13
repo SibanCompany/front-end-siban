@@ -45,7 +45,7 @@ function ActivityMainSection() {
           <RightList>
             <li>
               D : DAY (디 : 데이){' '}
-              <span style={{ color: 'red' }}> [공연 예정] </span>
+              <span style={{ color: '#e5e5e5' }}> [공연 종료] </span>
             </li>
             <li> 드라마극 (80분) </li>
             <li> 2023.07.01(토) ~ 2023.07.02(일) </li>
